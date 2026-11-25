@@ -1,8 +1,8 @@
 ![](../../workflows/test/badge.svg)
 
-# <Peripheral name>
+# Video
 
-**Team:** <AND / OR / XOR / NAND / NOR / NOT> · **Sub-group:** <name> · **Owners:** <two names>
+**Team:** XOR · **Sub-group:** VGA timing · Sprite · Text overlay · **Owners:** TBD (two names, added at the first session)
 
 Part of the **Bristol Silicon Society (BriSS)** RISC-V games chip: TinyQV plus our own peripherals, taped out on the Tiny Tapeout GF180 shuttle.
 
@@ -14,8 +14,8 @@ Part of the **Bristol Silicon Society (BriSS)** RISC-V games chip: TinyQV plus o
 
 | Path | What it is |
 |---|---|
-| `src/peripheral.v` | Your peripheral's Verilog. Rename the module from `tqvp_example` to `tqvp_briss_<name>` |
-| `src/tt_wrapper.v` | Connects your peripheral to the test harness. Change line 41 to your module name |
+| `src/peripheral.v` | Your peripheral's Verilog (module `tqvp_briss_video`) |
+| `src/tt_wrapper.v` | Connects your peripheral to the test harness |
 | `test/test.py` | Automated tests (cocotb). One test per check in `SPEC.md` |
 | `docs/info.md` | Datasheet text for Tiny Tapeout |
 | `SPEC.md` | Our spec: registers, behaviour, checks |
